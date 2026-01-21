@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meus Links | Social</title>
+    <title>Vitolino03 | Links</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -11,15 +11,10 @@
             --card-bg: rgba(255, 255, 255, 0.05);
             --card-border: rgba(255, 255, 255, 0.1);
             --text-color: #ffffff;
-            --accent-color: #00d4ff;
             --hover-bg: rgba(255, 255, 255, 0.12);
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
             background-color: var(--bg-color);
@@ -33,95 +28,80 @@
             padding: 20px;
         }
 
-        .container {
-            width: 100%;
-            max-width: 400px;
-            text-align: center;
+        .container { width: 100%; max-width: 400px; text-align: center; }
+
+        .profile-wrapper {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 16px;
         }
 
         .profile-img {
-            width: 96px;
-            height: 96px;
+            width: 110px;
+            height: 110px;
             border-radius: 50%;
-            background: linear-gradient(45deg, #444, #111);
-            margin-bottom: 16px;
-            border: 2px solid var(--card-border);
+            object-fit: cover; /* Garante que a foto não fique esticada */
+            border: 3px solid var(--card-border);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.5);
         }
 
-        h1 {
-            font-size: 1.25rem;
-            font-weight: 600;
-            margin-bottom: 8px;
-            letter-spacing: -0.5px;
-        }
+        h1 { font-size: 1.5rem; font-weight: 600; margin-bottom: 8px; letter-spacing: -0.5px; }
+        p { font-size: 0.95rem; color: #888; margin-bottom: 32px; }
 
-        p {
-            font-size: 0.9rem;
-            color: #888;
-            margin-bottom: 32px;
-        }
-
-        .links-container {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-        }
+        .links-container { display: flex; flex-direction: column; gap: 14px; }
 
         .link-card {
             background: var(--card-bg);
             border: 1px solid var(--card-border);
-            padding: 16px;
+            padding: 18px;
             border-radius: 12px;
             text-decoration: none;
             color: var(--text-color);
-            font-weight: 400;
+            font-weight: 600;
             transition: all 0.3s ease;
             backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
         }
 
         .link-card:hover {
             background: var(--hover-bg);
-            transform: translateY(-2px);
-            border-color: rgba(255, 255, 255, 0.3);
+            transform: translateY(-3px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
         }
 
-        /* Cores sutis no hover para cada plataforma */
-        .tiktok:hover { border-color: #ff0050; }
-        .twitch:hover { border-color: #9146ff; }
-        .instagram:hover { border-color: #e1306c; }
-        .youtube:hover { border-color: #ff0000; }
-        .kick:hover { border-color: #53fc18; }
+        /* Cores das bordas ao passar o mouse */
+        .livepix:hover { border-color: #28c76f; box-shadow: 0 0 15px rgba(40, 199, 111, 0.3); }
+        .tiktok:hover { border-color: #ff0050; box-shadow: 0 0 15px rgba(255, 0, 80, 0.3); }
+        .twitch:hover { border-color: #9146ff; box-shadow: 0 0 15px rgba(145, 70, 255, 0.3); }
+        .youtube:hover { border-color: #ff0000; box-shadow: 0 0 15px rgba(255, 0, 0, 0.3); }
+        .kick:hover { border-color: #53fc18; box-shadow: 0 0 15px rgba(83, 252, 24, 0.3); }
 
-        footer {
-            margin-top: 40px;
-            font-size: 0.7rem;
-            color: #444;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
+        footer { margin-top: 40px; font-size: 0.75rem; color: #444; text-transform: uppercase; letter-spacing: 1.5px; }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <div style="display: flex; justify-content: center;">
-            <div class="profile-img"></div> 
+        <div class="profile-wrapper">
+            <img src="teste1.jpg" alt="Foto de Perfil" class="profile-img">
         </div>
         
-        <h1>@SeuUsuario</h1>
-        <p>Criador de Conteúdo & Streamer</p>
+        <h1>@Vitolino03</h1>
+        <p>Criador de Conteúdo</p>
 
         <div class="links-container">
-            <a href="https://tiktok.com/@seu_user" target="_blank" class="link-card tiktok">TikTok</a>
-            <a href="https://twitch.tv/seu_user" target="_blank" class="link-card twitch">Twitch</a>
-            <a href="https://instagram.com/seu_user" target="_blank" class="link-card instagram">Instagram</a>
-            <a href="https://youtube.com/@seu_user" target="_blank" class="link-card youtube">YouTube</a>
-            <a href="https://kick.com/seu_user" target="_blank" class="link-card kick">Kick</a>
+            <a href="https://livepix.gg/vitolino" target="_blank" class="link-card livepix">Mande um PIX (Livepix) 💸</a>
+            <a href="https://twitch.tv/vitolino03" target="_blank" class="link-card twitch">Twitch 🟣</a>
+            <a href="https://kick.com/vitolino03" target="_blank" class="link-card kick">Kick 🟢</a>
+            <a href="https://youtube.com/@Vitolino03" target="_blank" class="link-card youtube">YouTube 🔴</a>
+            <a href="https://tiktok.com/@vitolino003" target="_blank" class="link-card tiktok">TikTok ⚫</a>
         </div>
 
         <footer>
-            &copy; 2024 • Minimal Links
+            © 2024 • Vitolino03
         </footer>
     </div>
 
